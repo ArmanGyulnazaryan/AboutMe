@@ -1,0 +1,72 @@
+section {
+  background: $section-bg;
+
+  .my-service {
+    // .my-service__title
+    padding-top: 96rem;
+
+    &__title {
+      color: $color-title;
+      font-size: 42rem;
+      font-weight: 700;
+      line-height: 64rem;
+      padding-bottom: 24rem;
+    }
+    span {
+      color: $primary-color;
+      font-size: 42rem;
+      font-weight: 700;
+      line-height: 64rem;
+    }
+
+    // .my-service__slogan
+
+    &__slogan {
+      max-width: 461rem;
+      color: $desc;
+      font-size: 16rem;
+      font-weight: 400;
+      line-height: 27rem;
+      padding-bottom: 56rem;
+    }
+  }
+  .service-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30rem;
+    padding-bottom: 96rem;
+    @include tablet-small {
+      grid-template-columns: 1fr;
+      gap: 30rem;
+    }
+  }
+
+  .service-item {
+    // .service-item__img
+    border-radius: 12rem;
+    background: $body-bg;
+    padding: 32rem;
+    text-align: center;
+
+    // .service-item__title
+
+    &__title {
+      color: $color-title;
+      text-align: center;
+      font-size: 26rem;
+      font-weight: 700;
+      line-height: 41rem;
+    }
+
+    // .service-item__desc
+
+    &__desc {
+      color: $desc;
+      text-align: center;
+      font-size: 16rem;
+
+      font-weight: 400;
+      line-height: 27rem;
+    }
+  }
+}

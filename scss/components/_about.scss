@@ -1,0 +1,67 @@
+.about {
+  padding: 96rem 0;
+  background: $about;
+  @include mobile {
+    padding: 60rem 10rem;
+  }
+  @include tablet-small {
+    padding: 60rem 10rem;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 89rem;
+    @include mobile {
+      flex-direction: column;
+    }
+    @include tablet-small {
+      flex-direction: column;
+    }
+  }
+
+  // .about__img
+
+  &__img {
+    flex-shrink: 0;
+  }
+
+  // .about__info
+
+  &__info {
+    .about__me {
+      color: $color-title;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 64px;
+      padding-bottom: 32px;
+    }
+
+    span {
+      color: $primary-color;
+      font-size: 42rem;
+      font-weight: 700;
+      line-height: 64rem;
+    }
+    .desc {
+      color: $desc;
+      font-size: 16rem;
+      font-weight: 400;
+      line-height: 27rem;
+      padding-bottom: 16rem;
+    }
+    .desc-2 {
+      color: $desc;
+      font-size: 16rem;
+      font-weight: 400;
+      line-height: 27rem;
+      padding-bottom: 40rem;
+    }
+  }
+
+  // .about__btn
+
+  &__btn {
+    padding: 16rem 20rem;
+  }
+}

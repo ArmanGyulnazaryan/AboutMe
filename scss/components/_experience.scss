@@ -1,0 +1,87 @@
+.experience {
+  padding-top: 85rem;
+  padding-bottom: 85rem;
+
+  .my-experience {
+    // .my-experience__title
+
+    &__title {
+      color: $color-title;
+      font-size: 42rem;
+      font-weight: 700;
+      line-height: 64rem;
+      padding-bottom: 24rem;
+    }
+    span {
+      color: $primary-color;
+      font-size: 42rem;
+      font-weight: 700;
+      line-height: 64rem;
+    }
+
+    // .my-experience__slogan
+
+    &__slogan {
+      max-width: 730rem;
+      color: $desc;
+      font-size: 16rem;
+      font-weight: 400;
+      line-height: 27rem;
+      padding-bottom: 80rem;
+    }
+  }
+  .experience-list {
+    display: flex;
+    gap: 30rem;
+    @include tablet-small {
+      flex-direction: column;
+      gap: 30rem;
+    }
+  }
+  .experience-item {
+    text-align: center;
+    border-radius: 12rem;
+    background: #020617;
+    padding: 32px;
+
+    // .experience-item__data
+
+    &__data {
+      color: #d1d5db;
+      font-size: 20rem;
+      font-weight: 400;
+      line-height: 27rem;
+      padding-bottom: 8rem;
+    }
+
+    // .experience-item__title
+
+    &__title {
+      color: $primary-color;
+      text-align: center;
+      font-size: 26rem;
+      font-weight: 700;
+      line-height: 41rem;
+      padding-bottom: 4rem;
+    }
+
+    // .experience-item__name
+
+    &__name {
+      color: #d1d5db;
+      font-size: 16rem;
+      font-weight: 700;
+      line-height: 27rem;
+    }
+
+    // .experience-item__desc
+
+    &__desc {
+      color: $desc;
+      font-size: 16rem;
+      font-weight: 400;
+      line-height: 27rem;
+      padding-bottom: 16rem;
+    }
+  }
+}
